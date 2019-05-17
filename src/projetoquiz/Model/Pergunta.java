@@ -14,11 +14,11 @@ import java.util.ArrayList;
 public class Pergunta {
     private String pergunta;
     private ArrayList<String> respostas;
+    private int respostaCerta;
     private float valorAcerto = 10f;
 
-    public Pergunta(String pergunta, ArrayList<String> respostas) {
-        this.pergunta = pergunta;
-        this.respostas = respostas;
+    public Pergunta() {
+        
     }
 
     public String getPergunta() {
@@ -45,6 +45,13 @@ public class Pergunta {
         this.valorAcerto = valorAcerto;
     }
     
+    public int getRespostaCerta() {
+        return respostaCerta;
+    }
+
+    public void setRespostaCerta(int respostaCerta) {
+        this.respostaCerta = respostaCerta;
+    }
 
    
 }

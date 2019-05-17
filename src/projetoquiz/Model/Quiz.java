@@ -13,8 +13,8 @@ import java.util.ArrayList;
  */
 public class Quiz {
 
-    private ArrayList<Pergunta> perguntas;
-    private ArrayList<Participante> participantes;
+    private ArrayList<Pergunta> perguntas = new ArrayList<>();
+    private ArrayList<Participante> participantes = new ArrayList<>();
    
 
     public ArrayList<Pergunta> getPerguntas() {
