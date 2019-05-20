@@ -9,8 +9,8 @@ package projetoquiz.Model;
  *
  * @author ENC-BACKEND
  */
-public class Participante {
- 
+public class Participante implements Comparable<Participante> {
+
     private String nome;
     private String cpf;
     private float saldo;
@@ -18,7 +18,7 @@ public class Participante {
     public String getNome() {
         return nome;
     }
-
+    // ENCAPSULAMENTO
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -27,6 +27,7 @@ public class Participante {
         return cpf;
     }
 
+    // ENCAPSULAMENTO
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
@@ -35,9 +36,28 @@ public class Participante {
         return saldo;
     }
 
+    // ENCAPSULAMENTO
     public void setSaldo(float saldo) {
         this.saldo = saldo;
     }
+
     
+    //    METODO QUE ATUALIZA O SALDO
+    public void addSaldo(float newSaldo) {
+        this.saldo = this.saldo + newSaldo;
+    }
+
     
+    //METODO PARA ORDENAR LISTA, PRECISAMOS IMPLEMENTAR A CLASSE COMPARABLE
+    @Override
+    public int compareTo(Participante participanteCompara) {
+        if (this.saldo > participanteCompara.getSaldo()) {
+            return -1;
+        }
+        if (this.saldo < participanteCompara.getSaldo()) {
+            return 1;
+        }
+        return 0;
+    }
+
 }

@@ -12,19 +12,21 @@ import java.util.ArrayList;
  * @author ENC-BACKEND
  */
 public class Pergunta {
+
     private String pergunta;
     private ArrayList<String> respostas;
     private int respostaCerta;
     private float valorAcerto = 10f;
 
     public Pergunta() {
-        
+
     }
 
     public String getPergunta() {
         return pergunta;
     }
 
+    // ENCAPSULAMENTO
     public void setPergunta(String pergunta) {
         this.pergunta = pergunta;
     }
@@ -33,6 +35,7 @@ public class Pergunta {
         return respostas;
     }
 
+    // INJECAO DE DEPENCIA
     public void setRespostas(ArrayList<String> respostas) {
         this.respostas = respostas;
     }
@@ -40,18 +43,19 @@ public class Pergunta {
     public float getValorAcerto() {
         return valorAcerto;
     }
-
+    
+    // ENCAPSULAMENTO
     public void setValorAcerto(float valorAcerto) {
         this.valorAcerto = valorAcerto;
     }
-    
+
     public int getRespostaCerta() {
         return respostaCerta;
     }
 
+    // ENCAPSULAMENTO
     public void setRespostaCerta(int respostaCerta) {
         this.respostaCerta = respostaCerta;
     }
 
-   
 }

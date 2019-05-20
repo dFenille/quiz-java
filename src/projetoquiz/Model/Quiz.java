@@ -16,19 +16,22 @@ public class Quiz {
     private ArrayList<Pergunta> perguntas = new ArrayList<>();
     private ArrayList<Participante> participantes = new ArrayList<>();
    
-
+    
     public ArrayList<Pergunta> getPerguntas() {
         return perguntas;
     }
-
+    
+    // INJEÇÃO DE DEPENDECIA
     public void setPerguntas(ArrayList<Pergunta> perguntas) {
         this.perguntas = perguntas;
     }
 
+    
     public ArrayList<Participante> getParticipantes() {
         return participantes;
     }
 
+    // INJEÇÃO DE DEPENDECIA
     public void setParticipantes(ArrayList<Participante> participantes) {
         this.participantes = participantes;
     }
