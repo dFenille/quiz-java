@@ -96,6 +96,7 @@ public class ProjetoQuiz {
                     if (participante != null) {
                         quiz.addParticipante(participante);
                     }
+                     System.out.println(" ----- FIM - OBRIGADO POR PARTICIPAR DO NOSSO QUIZ-------");
                     
                     break;
                 case 2: // MOSTRAR RANKING
@@ -167,7 +168,7 @@ public class ProjetoQuiz {
         listaPergunta.add(pergunta3);
         
         
-         ArrayList<String> listaResposta4 = new ArrayList<>();
+        ArrayList<String> listaResposta4 = new ArrayList<>();
         Pergunta pergunta4 = new Pergunta();
         pergunta4.setRespostaCerta(3);
         pergunta4.setPergunta("4. Qual dos animais abaixo corre o maior risco de extinção no mundo?");
@@ -178,6 +179,87 @@ public class ProjetoQuiz {
         pergunta4.setRespostas(listaResposta4);
         
         listaPergunta.add(pergunta4);
+        
+        
+        ArrayList<String> listaResposta5 = new ArrayList<>();
+        Pergunta pergunta5 = new Pergunta();
+        pergunta5.setRespostaCerta(4);
+        pergunta5.setPergunta("5. Quais desses fatores fazem parte das causas que podem levar uma espécie de animal a correr risco de extinção?");
+        listaResposta5.add("1 - Fortes chuvas");
+        listaResposta5.add("2 - Agricultura");
+        listaResposta5.add("3 - Rede elétrica");
+        listaResposta5.add("4 - Poluição");
+        pergunta5.setRespostas(listaResposta5);
+       
+        listaPergunta.add(pergunta5);
+        
+        
+        
+        
+        ArrayList<String> listaResposta6 = new ArrayList<>();
+        Pergunta pergunta6 = new Pergunta();
+        pergunta6.setRespostaCerta(4);
+        pergunta6.setPergunta("6. Quais desses biomas não fazem parte do Brasil?");
+        listaResposta6.add("1 - Caatinga");
+        listaResposta6.add("2 - Pampas");
+        listaResposta6.add("3 - Pantanal");
+        listaResposta6.add("4 - Tundra ");
+        pergunta6.setRespostas(listaResposta6);
+        
+        listaPergunta.add(pergunta6);
+        
+        
+        ArrayList<String> listaResposta7 = new ArrayList<>();
+        Pergunta pergunta7 = new Pergunta();
+        pergunta7.setRespostaCerta(2);
+        pergunta7.setPergunta("7. Qual é o número estimado de animais que existem no Brasil?");
+        listaResposta7.add("1 - 31 mil");
+        listaResposta7.add("2 - 106 mil");
+        listaResposta7.add("3 - 300 mil");
+        listaResposta7.add("4 - 6 mil");
+        pergunta7.setRespostas(listaResposta7);
+        
+        listaPergunta.add(pergunta7);
+        
+        
+        ArrayList<String> listaResposta8 = new ArrayList<>();
+        Pergunta pergunta8 = new Pergunta();
+        pergunta8.setRespostaCerta(2);
+        pergunta8.setPergunta("8. O governo disponibiliza um livro online que lista todas as espécies de animais que correm risco de extinção, qual é o nome desse livro?");
+        listaResposta8.add("1 - Livro dos Animais em Extinção");
+        listaResposta8.add("2 - Livro Vermelho da Fauna Brasileira");
+        listaResposta8.add("3 - Lista Negra dos Animais");
+        listaResposta8.add("4 - Livro dos Animais");
+        pergunta8.setRespostas(listaResposta8);
+        
+        listaPergunta.add(pergunta8);
+        
+        
+        ArrayList<String> listaResposta9 = new ArrayList<>();
+        Pergunta pergunta9 = new Pergunta();
+        pergunta9.setRespostaCerta(1);
+        pergunta9.setPergunta("9. Quais são as maiores vítimas do tráfico de animais?");
+        listaResposta9.add("1 - As aves, pois são muito procuradas por sua beleza");
+        listaResposta9.add("2 - As baleias, acabam crescendo muito e são abandonadas pelos seus donos");
+        listaResposta9.add("3 - Os lagartos, pois eles não conseguem se adaptar a vida em cativeiro");
+        listaResposta9.add("4 - Os roedores, pois sua alimentação adequada só é encontrada na floresta");
+        pergunta9.setRespostas(listaResposta9);
+        
+        listaPergunta.add(pergunta9);
+        
+        
+        ArrayList<String> listaResposta10 = new ArrayList<>();
+        Pergunta pergunta10 = new Pergunta();
+        pergunta10.setRespostaCerta(2);
+        pergunta10.setPergunta("10. Onde geralmente são vendidos os animais silvestres vítimas do tráfico?");
+        listaResposta10.add("1 - Nos sites de e-comércio");
+        listaResposta10.add("2 - Feiras livres");
+        listaResposta10.add("3 - Rodoviárias");
+        listaResposta10.add("4 - Ibama");
+        pergunta10.setRespostas(listaResposta10);
+        
+        listaPergunta.add(pergunta10);
+        
         
         
         return listaPergunta;
